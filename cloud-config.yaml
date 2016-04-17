@@ -1,0 +1,15 @@
+#cloud-config
+
+hostname: "mulder"
+
+ssh_authorized_keys:
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAjGbfCHpwGNDMwD6LNaMKv7ppaCRBjiNfhE7om/HH6qMc7YYGpLfGy8aK9FBH4t4UDRkrUfjZkQypWjjTWQWmjthsFZO037DRbNaYgwfvVwhT/L6m59wiI9TFLv6CPBuQBiqe85TdupScmfcFTyaC0juBDjpZ2pP+8yUaXwEG3Edkufn3IYffyq3T3DSV4cCUhW738y1quqAFem6jk45omVtT/x1rV5IAHy1rbNmQFSrXnSXXQWwTUmhYwGngRR7HlzpW6RZbB/ag1IzwKA7eG0VenZ5wtOTFE4zsffhi298t5SZ9hsMITBG0kAhmWtNKiZAR176s1+xkKgQpAPOkTw=="
+
+users:
+  - name: "mulder"
+    passwd: "2e4348b392f104fe330c58e9d3420c4cba719869fcf47078ca717749689a523d4b4af9aca0085bffd1c3118627f82249db800832b25a86f5f02f23d1a298beb6"
+    groups:
+      - "sudo"
+      - "docker"
+    ssh-authorized-keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAjGbfCHpwGNDMwD6LNaMKv7ppaCRBjiNfhE7om/HH6qMc7YYGpLfGy8aK9FBH4t4UDRkrUfjZkQypWjjTWQWmjthsFZO037DRbNaYgwfvVwhT/L6m59wiI9TFLv6CPBuQBiqe85TdupScmfcFTyaC0juBDjpZ2pP+8yUaXwEG3Edkufn3IYffyq3T3DSV4cCUhW738y1quqAFem6jk45omVtT/x1rV5IAHy1rbNmQFSrXnSXXQWwTUmhYwGngRR7HlzpW6RZbB/ag1IzwKA7eG0VenZ5wtOTFE4zsffhi298t5SZ9hsMITBG0kAhmWtNKiZAR176s1+xkKgQpAPOkTw=="
